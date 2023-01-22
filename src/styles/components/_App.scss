@@ -8,9 +8,15 @@
 
 html {
     height: -webkit-fill-available; /* We have to fix html height */
+    overflow-y: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
 }
 
 body {
     min-height: 100vh;
     min-height: -webkit-fill-available;
+    overflow-y: hidden;
+    touch-action: none;
+    -ms-touch-action: none;
 }
