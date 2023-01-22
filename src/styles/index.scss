@@ -1,0 +1,16 @@
+
+
+//UI SETTINGS.
+@import './components/Variables';
+
+// COMPONENTS.
+@import './components/Setting';
+@import './components/App';
+@import './components/Navbar';
+@import './components/Information';
+@import './components/Map';
+
+
+// SCREENS.
+@import './Screens/InformationScreen';
+@import './Screens/NavbarScreen';

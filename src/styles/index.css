@@ -1,0 +1,113 @@
+/**/
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Navbar {
+  background-image: url(/src/assets/pattern-bg.png);
+  background-size: cover;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 100;
+}
+.Navbar h1 {
+  margin: 0;
+  color: white;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+.Navbar__search {
+  margin-top: 1.5rem;
+  width: 32.5rem;
+  height: 3rem;
+  border-radius: 15px;
+  display: flex;
+  overflow: hidden;
+}
+.Navbar__search input {
+  width: 90%;
+  border: none;
+  outline: none;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.Navbar__search button {
+  background-color: black;
+  width: 10%;
+  border: none;
+  outline: none;
+  transition-property: background-color;
+  transition-duration: 0.2s;
+  cursor: pointer;
+}
+.Navbar__search button:hover {
+  background-color: hsl(0deg, 0%, 59%);
+}
+
+.Information {
+  width: 100%;
+  display: flex;
+  transform: translateY(60px);
+  justify-content: center;
+  align-items: center;
+}
+.Information__container {
+  display: flex;
+  background-color: white;
+  border-radius: 12px;
+  height: 7.5rem;
+  width: 70rem;
+  justify-content: space-evenly;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.Information__container .separador {
+  display: flex;
+  width: 0.075rem;
+  align-items: center;
+}
+.Information__container .separador div {
+  width: 100%;
+  height: 45%;
+  background-color: hsl(0deg, 0%, 59%);
+}
+.Information__container .list p:first-child {
+  color: hsl(0deg, 0%, 59%);
+  font-weight: 500;
+  font-size: 0.75rem;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+.Information__container .list p:last-child {
+  color: black;
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+
+.Map {
+  min-height: 70vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 70vh;
+}/*# sourceMappingURL=index.css.map */
